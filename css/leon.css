@@ -1,0 +1,35 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+html, body, div {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: none;
+}
+
+div {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+div:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+div:nth-of-type(odd) {
+  color: black;
+  background: white;
+  text-align: center;
+}
+
